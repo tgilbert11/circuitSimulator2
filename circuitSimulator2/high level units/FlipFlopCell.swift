@@ -1,5 +1,3 @@
-import Foundation
-
 class FlipFlopCell {
     let set, q, q_, reset, fullReset: Node
     

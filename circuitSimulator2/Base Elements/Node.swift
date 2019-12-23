@@ -1,13 +1,3 @@
-//
-//  Node.swift
-//  circuitSimulator2
-//
-//  Created by Taylor Gilbert on 12/22/19.
-//  Copyright © 2019 Taylor Gilbert. All rights reserved.
-//
-
-import Foundation
-
 class Node {
     static var nodes: [Node] = []
 

@@ -1,13 +1,3 @@
-//
-//  Register.swift
-//  circuitSimulator2
-//
-//  Created by Taylor Gilbert on 12/22/19.
-//  Copyright © 2019 Taylor Gilbert. All rights reserved.
-//
-
-import Foundation
-
 class Register {
     let pulseGenerator1, pulseGenerator2, pulseGenerator3, rawPulse, pulse, pulse_: Node
     let cells: [FlipFlopCell]
@@ -27,7 +17,5 @@ class Register {
             workingCells.append(FlipFlopCell(data_: data_[i], pulse: self.pulse, pulse_: self.pulse_, reset_: reset_, outputEnable_: outputEnable_, output: output[i]))
         }
         self.cells = workingCells
-        
-        //self.cells = Array(0..<data_.count).map({ FlipFlopCell(data_: data_[$0], pulse: self.pulse, pulse_: self.pulse_, reset_: reset_, outputEnable_: outputEnable_, output: output[$0]) })
     }
 }
