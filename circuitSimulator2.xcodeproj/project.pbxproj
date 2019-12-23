@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B530B8DA23AFC2B300F56110 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530B8D923AFC2B300F56110 /* Node.swift */; };
+		B530B8DC23B0A51900F56110 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530B8DB23B0A51900F56110 /* Register.swift */; };
 		B56FE0AB23946E2700E65046 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56FE0AA23946E2700E65046 /* main.swift */; };
+		B5DE0F452397DE3A00537930 /* FlipFlopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE0F442397DE3A00537930 /* FlipFlopCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B530B8D923AFC2B300F56110 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		B530B8DB23B0A51900F56110 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		B56FE0A723946E2700E65046 /* circuitSimulator2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = circuitSimulator2; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56FE0AA23946E2700E65046 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B5DE0F442397DE3A00537930 /* FlipFlopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipFlopCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,27 @@
 			isa = PBXGroup;
 			children = (
 				B56FE0AA23946E2700E65046 /* main.swift */,
+				B56FE0B823946E8F00E65046 /* Base Elements */,
+				B5DE0F432397DDD300537930 /* high level units */,
 			);
 			path = circuitSimulator2;
+			sourceTree = "<group>";
+		};
+		B56FE0B823946E8F00E65046 /* Base Elements */ = {
+			isa = PBXGroup;
+			children = (
+				B530B8D923AFC2B300F56110 /* Node.swift */,
+			);
+			path = "Base Elements";
+			sourceTree = "<group>";
+		};
+		B5DE0F432397DDD300537930 /* high level units */ = {
+			isa = PBXGroup;
+			children = (
+				B5DE0F442397DE3A00537930 /* FlipFlopCell.swift */,
+				B530B8DB23B0A51900F56110 /* Register.swift */,
+			);
+			path = "high level units";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DE0F452397DE3A00537930 /* FlipFlopCell.swift in Sources */,
+				B530B8DA23AFC2B300F56110 /* Node.swift in Sources */,
+				B530B8DC23B0A51900F56110 /* Register.swift in Sources */,
 				B56FE0AB23946E2700E65046 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -253,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
